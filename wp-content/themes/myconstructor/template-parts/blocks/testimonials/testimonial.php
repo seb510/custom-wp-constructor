@@ -27,7 +27,7 @@ if( !empty($block['align']) ) {
 $text = get_field('testimonial') ?: 'Your testimonial here...';
 $author = get_field('author') ?: 'Author name';
 $role = get_field('role') ?: 'Author role';
-$image = get_field('image') ?: 295;
+$image = get_field('image') ?: 51;
 $background_color = get_field('background_color');
 $text_color = get_field('text_color');
 
@@ -85,6 +85,8 @@ $text_color = get_field('text_color');
             vertical-align: top;
             object-fit: cover;
             height: 100%;
+            width: 100%;
         }
+
 	</style>
 </div>

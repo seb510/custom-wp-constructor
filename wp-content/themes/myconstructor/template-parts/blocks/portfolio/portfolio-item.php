@@ -23,12 +23,12 @@ if( !empty($block['align']) ) {
 	$className .= ' align' . $block['align'];
 }
 
-$logo = get_field( 'logo' ) ?: 296;
+$logo = get_field( 'logo' ) ?: 52;
 $title = get_field( 'title' )  ?: "Title";
 $description = get_field( 'description' ) ?: 'Information';
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> my-portfolio-item">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> portfolio-item my-portfolio-item">
     <div class="portfolio-logo">
 		<?php echo wp_get_attachment_image( $logo, 'full' ); ?>
     </div>
@@ -36,4 +36,16 @@ $description = get_field( 'description' ) ?: 'Information';
         <h3 class="portfolio-title"><?php echo $title; ?></h3>
         <div class="portfolio-description"><?php echo $description; ?></div>
     </blockquote>
+    <style>
+        .portfolio-item {
+            border-bottom: 2px solid #ebebeb;
+            display: grid;
+            grid-template-columns: minmax(120px, 220px) 1fr;
+            column-gap: 10px;
+        }
+
+        .portfolio-logo {
+            outline: 2px solid #ebebeb;
+        }
+    </style>
 </div>
