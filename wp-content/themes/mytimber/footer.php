@@ -9,11 +9,12 @@
  * @package mytimber
  */
 
-?>
 
+$context = \Timber\Timber::context();
+\Timber\Timber::render('footer/index.twig', $context);
 
+wp_footer(); ?>
 
-<?php wp_footer(); ?>
-
+</div>
 </body>
 </html>

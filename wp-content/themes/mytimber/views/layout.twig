@@ -1,11 +1,12 @@
-{% include '/nav/menu.twig' %}
-    {% block content %}
+<main class="main">
+       <div class="main-content">
+           {% block content %}
 
-    {% endblock %}
+           {% endblock %}
 
+           {% block belowContent %}
+           {% endblock %}
+       </div>
+</main>
 
-    {% block belowContent %}
-    {% endblock %}
-
-{% include '/nav/menu-footer.twig' %}
 

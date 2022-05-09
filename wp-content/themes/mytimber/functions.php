@@ -1,5 +1,7 @@
 <?php
 
+include 'inc/register-scripts.php';
+include 'inc/register-styles.php';
 
 add_action( 'after_setup_theme', function(){
 	register_nav_menus( [

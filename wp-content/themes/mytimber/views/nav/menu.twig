@@ -1,12 +1,12 @@
 
-<nav>
+<nav class="nav-header">
     <div>
-        <a href="#">
+        <a href="{{site.url}}">
             Home
             <img src="" alt="">
         </a>
     </div>
-    <ul class="nav-main">
+    <ul class="nav-main menu-list">
         {% for item in header_menu.items %}
             <li class="nav-main-item {{ item.classes|join(' ') }}">
                 <a class="nav-main-link" href="{{ item.link }}">{{ item.title }}</a>

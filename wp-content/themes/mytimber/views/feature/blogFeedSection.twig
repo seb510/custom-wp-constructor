@@ -1,0 +1,23 @@
+{#
+Blog Feed Section
+#}
+
+<div class="blogFeedSection section">
+    <div class="feed__container">
+        <h2 class="title">Blog Feed</h2>
+        {% for blogitem in homePageFeed %}
+            <div class="home-blogPost">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="title"> {{ blogitem.title }} </h3>
+                    <p class="excerpt">
+                        {{ blogitem.preview.length(20).end('').read_more('') }}
+                    </p>
+                    <a href="{{ blogitem.link }}" class="cta">Read more</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -21,7 +21,15 @@
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+	            <?php
+	            $context = \Timber\Timber::context();
+	            \Timber\Timber::render('nav/menu.twig', $context);
+	            ?>
+            </div>
+        </header>
 
 
 
