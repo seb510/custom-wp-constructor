@@ -1,0 +1,12 @@
+{# category.twig #}
+    <section class="category">
+        <div class="category__container">
+            {% for post in job %}
+                <div class="job mix">
+                    <h2 class="title">{{ post.title }}</h2>
+                    <p>{{ post.content }}</p>
+                    <p>{{ post.terms('category') | join(', ') }}
+                </div>
+            {% endfor %}
+        </div>
+    </section>

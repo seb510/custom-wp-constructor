@@ -72,6 +72,13 @@ body {
 
 .single-post {
     padding: 15px;
+    border: 1px solid #02e49b;
+}
+
+.nav-header, .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer {

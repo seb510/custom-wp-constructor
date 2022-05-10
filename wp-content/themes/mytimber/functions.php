@@ -15,4 +15,3 @@ add_action( 'after_setup_theme', function(){
  */
 
 require get_template_directory(). '/inc/timber/menu/menuFunc.php';
-?>
